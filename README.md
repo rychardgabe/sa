@@ -1,4 +1,4 @@
 Integrantes 
-Rychard Gabriel
-Isabelle Alves
-Matheus Lima
+Rychard Gabriel;
+Isabelle Alves;
+Matheus Lima.
