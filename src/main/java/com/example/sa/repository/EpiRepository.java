@@ -2,7 +2,7 @@ package com.example.sa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.sa.Epi;
+import com.example.sa.entity.Epi;
 
 public interface EpiRepository extends JpaRepository<Epi, Integer>{
 
