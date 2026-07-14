@@ -7,6 +7,8 @@ import org.hibernate.annotations.Comment;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.alves.exemplo01_2026.entity.Departamento;
+import com.example.sa.entity.*;
 import com.example.sa.utils.ConsoleUtils;
 
 public class Controller {
@@ -54,6 +56,15 @@ public class Controller {
 			} while (opcao != 0);
 
 		}
+		private void cadastrarColaborador() {
+			Scanner input = new Scanner(System.in);
 		
+			System.out.println("Insira o nome do Colaborador");
+			String nome = input.nextLine();
+		
+			Colaborador colaborador = new Colaborador();
+			colaborador.setNome(nome);
+			
 	}
+}
 }
