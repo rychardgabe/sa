@@ -38,17 +38,7 @@ public class Colaborador {
 	@JoinColumn(name = "id_colaborador", referencedColumnName = "id_colaborador")
 	private Emprestimo emprestimo;
 
-	public Colaborador(int Colaborador, String nome, String cpf, String telefone, String setor, String cargo, int idColaborador, 
-			Emprestimo emprestimo) {
-		super();
-		this.idColaborador = idColaborador;
-		this.nome = nome;
-		this.cpf = cpf;
-		this.telefone = telefone;
-		this.setor = setor;
-		this.emprestimo = emprestimo;
-		this.cargo = cargo ;
-	}
+
 
 	public Colaborador() {
 
