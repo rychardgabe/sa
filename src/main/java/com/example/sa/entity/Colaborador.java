@@ -31,14 +31,14 @@ public class Colaborador {
 	@Column(name = "setor")
 	private String setor;
 	
-	@Column(name = "carga")
-	private String carga;
+	@Column(name = "cargo")
+	private String cargo;
 
 	@ManyToOne
 	@JoinColumn(name = "id_colaborador", referencedColumnName = "id_colaborador")
 	private Emprestimo emprestimo;
 
-	public Colaborador(int Colaborador, String nome, String cpf, String telefone, String setor, String carga, int idColaborador, 
+	public Colaborador(int Colaborador, String nome, String cpf, String telefone, String setor, String cargo, int idColaborador, 
 			Emprestimo emprestimo) {
 		super();
 		this.idColaborador = idColaborador;
@@ -47,6 +47,7 @@ public class Colaborador {
 		this.telefone = telefone;
 		this.setor = setor;
 		this.emprestimo = emprestimo;
+		this.cargo = cargo ;
 	}
 
 	public Colaborador() {
@@ -93,8 +94,8 @@ public class Colaborador {
 		this.setor = setor;
 	}
 	
-	public void setCarga(String carga) {
-		this.carga = carga;}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;}
 
 	public Emprestimo getEmprestimo() {
 		return emprestimo;
@@ -107,7 +108,7 @@ public class Colaborador {
 	@Override
 	public String toString() {
 		return "Colaborador [idColaborador=" + idColaborador + ", nome=" + nome + ", cpf=" + cpf + ", telefone="
-				+ telefone + ", setor=" + setor + ", carga=" + carga+" emprestimo=" + emprestimo + "]";
+				+ telefone + ", setor=" + setor + ", cargo=" + cargo+" emprestimo=" + emprestimo + "]";
 	}
 
 }
