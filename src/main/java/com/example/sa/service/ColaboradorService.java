@@ -13,7 +13,7 @@ public class ColaboradorService {
 	ColaboradorRepository ColaboradorRepository;
 
 	//Create
-	public void cadastrarColaborador(Colaborador colaborador) {
+	public static void cadastrarColaborador(Colaborador colaborador) {
 		ColaboradorRepository.save(colaborador);
 	}
 	
