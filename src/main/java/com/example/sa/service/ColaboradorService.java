@@ -14,9 +14,8 @@ public class ColaboradorService {
 
 	//Create
 	public static void cadastrarColaborador(Colaborador colaborador) {
-		ColaboradorRepository.save(colaborador);
+		return ColaboradorRepository.save(colaborador);
 	}
-	
 	
 	
 	//Read
