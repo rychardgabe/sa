@@ -4,9 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.sa.entity.Colaborador;
 import com.example.sa.entity.Epi;
-import com.example.sa.repository.ColaboradorRepository;
 import com.example.sa.repository.*;
 
 public class EpiService {
@@ -22,7 +20,7 @@ public class EpiService {
 	
 	
 	//Read
-	public List<Epi> listaEpi() {
+	public List<Epi> listarEpi() {
 		return EpiRepository.findAll();
 	}
 	
