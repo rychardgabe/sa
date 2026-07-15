@@ -21,7 +21,7 @@ public class EmprestimoService {
 	
 	
 	//Read
-	public List<Emprestimo> listaEmprestimo() {
+	public List<Emprestimo> listarEmprestimo() {
 		return EmprestimoRepository.findAll();
 	}
 	

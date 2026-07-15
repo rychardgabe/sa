@@ -5,8 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.sa.entity.Colaborador;
-import com.example.sa.entity.Emprestimo;
-
 import com.example.sa.repository.*;
 
 public class ColaboradorService {
@@ -20,9 +18,8 @@ public class ColaboradorService {
 	}
 	
 	
-	
 	//Read
-	public List<Colaborador> listaColaborador() {
+	public List<Colaborador> listarColaborador() {
 		return ColaboradorRepository.findAll();
 	}
 	
